@@ -25,7 +25,7 @@ fn main() {
             .read_line(&mut input)
             .expect("Failed to read the line");
 
-        let input = input.trim().parse().expect("Invalid input");
+        let input: i32 = input.trim().parse().expect("Invalid input");
         return input;
     }
 
