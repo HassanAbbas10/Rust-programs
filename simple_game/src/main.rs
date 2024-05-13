@@ -33,16 +33,16 @@ fn main() {
 
     if start_game == 1 {
         println!("Welcome (●'◡'●) \n");
-        println!("You have entered the game \n");
-        println!(" Enter the number \n");
+        println!("==================You have entered the game========================= \n");
+        println!(" ===========>++Enter the number++<=========== \n");
 
         let magic_num = rand::thread_rng().gen_range(1..=100);
         let guess_num = get_input_str();
 
         if magic_num == guess_num.trim().parse().expect("input error") {
-            println!("\nYou Win \n");
+            println!("\n=========You Win============\n Numbers are matched");
         } else {
-            println!("\nYou lose \n");
+            println!("\n=========You lose========\n Your number {guess_num} does not match magic number : {magic_num}");
         }
 
         
